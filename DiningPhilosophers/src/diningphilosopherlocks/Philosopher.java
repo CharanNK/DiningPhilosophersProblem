@@ -16,7 +16,7 @@ public class Philosopher implements Runnable{
 		this.id = id;
 		this.leftChopStick = lefChopstick;
 		this.rightChopStick = rightChopStick;
-		random = new Random();
+		this.random = new Random();
 	}
 	
 	@Override
@@ -44,7 +44,7 @@ public class Philosopher implements Runnable{
 	
 	public void eat() throws InterruptedException{
 		System.out.println(this+" is eating..");
-		eatingCounter++;
+		this.eatingCounter++;
 		Thread.sleep(this.random.nextInt(1000));
 	}
 	

@@ -22,7 +22,7 @@ public class Chopstick {
 	}
 	
 	public void putDown(Philosopher philosopher,States state) throws InterruptedException{
-		lock.unlock();
+		this.lock.unlock();
 		System.out.println(philosopher+" put down "+this);
 	}
 	
